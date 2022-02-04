@@ -1,0 +1,11 @@
+.wrap{
+margin: 0 25% 0 25%;
+}
+
+
+.wrap_left{
+    display: inline-block;
+}
+.wrap_right{
+    display: inline-block;
+}
