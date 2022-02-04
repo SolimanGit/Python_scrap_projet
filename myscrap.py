@@ -46,27 +46,6 @@ for index, page in enumerate(pages):
         # Dictionnaire du résultat
         json_array['base'] = {'titre': titre.text, 'image': image,'annee':annee.text,'synopsys':synopsys.text}
         json_array['results'].append({'site':'imdb','note':note.text })
-
-       
-#         file.write(f'''
-#             <container class="wrap">
-#                 <div class="wrap_left">
-#                     <p>{titre}</p>
-#                     <img src="{image}" />
-#                 </div>
-#                 <div class="wrap_right">
-#                     <div class="wrap_imdb">
-#                         IMDB
-#                     </div>
-#                     <div class="wrap_rotten">
-#                         ROTTEN
-#                     </div>
-
-#                 </div>
-#             </container>
-#             </body>
-#             </html>
-# ''')
         
 
     #Pour le site RottenTomatoes
@@ -119,32 +98,3 @@ file.write(f''' <div class="card mb-3" style="max-width: 80%; margin: 100px auto
         </div>''')
 with open('json_data.json', 'w') as outfile:
     json.dump(json_array, outfile)
-
-
-
-
-# <div class="row">
-#     <div class="col-md-4 bg-secondary">
-#         <div class="well text-danger">
-#             <h1>{titre}</h1>
-#             <img src="{image}"/>
-#             <p>{synopsys}</p>
-#         </div>
-#     </div>
-#     <div class="col-md-8 d-flex align-content-center">
-#         <div class="row h-auto">
-#             <div class="col-md-6 bg-secondary">
-#                 <div class="well">2</div>
-#             </div>
-#         </div>
-#         <div class="row h-auto">
-#             <div class="col-md-6 bg-secondary">
-#                 <div class="well">3</div>
-#             </div>
-#         </div>
-#     </div>
-# </div>
-# </body>
-# </html>
-
-
